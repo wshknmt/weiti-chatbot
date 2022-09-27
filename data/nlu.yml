@@ -1,0 +1,294 @@
+version: "2.0"
+nlu:
+- intent: powitanie
+  examples: |
+    - cześć
+    - dzień dobry
+    - witaj
+    - hej
+    - elo
+    - siema
+    - hejka
+- intent: pozegnanie
+  examples: |
+    - do widzenia
+    - na razie
+    - do zobaczenia
+    - pa
+    - dobranoc
+    - żegnam
+    - koniec
+    - kończymy
+    - to wszystko na dzisiaj
+    - uciekam
+    - pogadamy później
+- intent: bot_challenge
+  examples: |
+    - czy jesteś robotem
+    - czy jesteś człowiekiem
+    - przedstaw się
+    - chcę cie poznać
+    - kim jesteś
+    - czy jesteś botem
+    - czy rozmawiam z robotem
+    - nie rozmawiam z człowiekiem
+- intent: cosTakiego
+  examples: |
+    - Coś takiego
+    - Nic takiego
+- intent: search_subjects
+  examples: |
+    - Proszę o informacje na temat przedmiotu [SDI](subject)
+    - informacje o przedmiocie [ZPI](subject)
+    - informacje o przedmiocie [WDEC](subject)
+    - informacje na temat przedmiotu [IOP](subject)
+    - szczegóły przedmiotu [PROD](subject)
+    - o czym jest przedmiot [PSZT](subject)
+    - czego dotyczy przedmiot [SCZR](subject)
+    - chciałbym się dowiedzieć o zajęciach [SCZR](subject)
+    - chciałabym się dowiedzieć o zajęciach [ZPI](subject)
+    - chciałabym się dowiedzieć o przedmiocie [IOP](subject)
+    - Chciałbym się dowiedzieć o wykładzie [ZPI](subject)
+    - proszę o informacje o przedmiocie [SCZR](subject)
+    - chciałabym się dowiedzieć o wykładzie [ZPI](subject)
+    - chciałbym się dowiedzieć o przedmiocie [SCZR](subject)
+    - Chciałabym się dowiedzieć o zajęciach [ZPI](subject)
+    - Chciałabym się dowiedzieć o wykładzie [PSZT](subject)
+    - Chciałbym się dowiedzieć o przedmiocie [SDI](subject)
+    - Proszę o informacje o przedmiocie [PSZT](subject)
+    - proszę o informacje o wykładzie [PSZT](subject)
+    - Chciałbym się dowiedzieć o zajęciach [SCZR](subject)
+    - Proszę o informacje o zajęciach [SDI](subject)
+    - Chciałabym się dowiedzieć o przedmiocie [PSZT](subject)
+    - proszę o informacje o zajęciach [IOP](subject)
+    - chciałbym się dowiedzieć o wykładzie [SCZR](subject)
+    - Proszę o informacje o wykładzie [IOP](subject)
+- intent: WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+  examples: |
+    - W jaki sposób mogę otrzymać zaświadczenie potwierdzające status studenta
+    - Jak mogę otrzymać zaświadczenie potwierdzające status studenta
+    - Chcę otrzymać potwierdzenie że studiuję
+    - Potrzebuje zaświadczenia o studiowaniu
+- intent: WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+  examples: |
+    - w jaki sposób mogę otrzymać kartę przebiegu studiów
+    - jak mogę otrzymać kartę przebiegu studiów
+- intent: CzyJestemUbezpieczonyWRamachNFZ
+  examples: |
+    - Czy jestem ubezpieczony w ramach NFZ
+    - Czy jestem ubezpieczony w Narodowym Funduszu Zdrowia
+    - Czy studiując mam ubezpieczenie
+- intent: JakSieUbezpieczyc
+  examples: |
+    - Jak się ubezpieczyć
+    - Jak sie ubezpieczyc
+    - Chciałbym dostać ubezpieczenie
+- intent: JakWystapicOMiejsceWAkademiku
+  examples: |
+    - Jak wystąpić o miejsce w akademiku
+    - Co muszę zrobić aby dostać miejsce w akademiku
+    - Chciałbym mieszkać w akademiku
+- intent: GdzieOdbioreDecyzjeStypendialne
+  examples: |
+    - Gdzie odbiorę decyzje stypendialne
+    - W jakim miejscu odbiorę decyzje stypendialne
+- intent: GdzieZlozeWniosekOStypendium
+  examples: |
+    - Gdzie złożę wniosek o stypendium
+    - Chciałbym złożyć wniosek o stypendium ale nie wiem gdzie
+- intent: ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+  examples: |
+    - Chce odebrać dyplom, jak mogę aktywować kartę obiegową
+    - Jak aktywować obiegówkę
+- intent: CzyIstniejeE-obiegowka
+  examples: |
+    - Czy istnieje e-obiegówka
+    - Czy jest coś takiego jak e-obiegówka
+- intent: JakieSaGodzinyObslugiStudentow
+  examples: |
+    - Jakie są godziny obsługi studentów
+    - W jakich godzinach jest czynny dziekanat
+- intent: NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+  examples: |
+    - Nie zaliczyłem przedmiotu , czy muszę za niego płacić
+    - Nie zdałem przedmiotu
+- intent: e-legitymacjaJestNieaktywna,JakiJestPowod
+  examples: |
+    - e-legitymacja jest nieaktywna, jaki jest powód
+    - co może być przyczyną nieaktywnej e-legitymacji
+- intent: JakMogeZlozycPodanie
+  examples: |
+    - Jak mogę złożyć podanie
+    - W jaki sposób składa się podanie
+- intent: ChceZrezygnowacZeStudiow,CoMamZrobic
+  examples: |
+    - Chcę zrezygnować ze studiów , co mam zrobić
+    - nie chcę już się uczyć
+    - jak przerwać studia
+    - chcę rzucić studia
+    - Nie chce już studiować, co powinienem zrobić
+- intent: JakWyrobicDuplikatLegitymacji
+  examples: |
+    - Jak wyrobić duplikat legitymacji
+    - Chciałbym wyrobić drugą legitymacje
+    - Zgubiłem legitymacje
+    - Jak powinienem zrobić następną legitymację
+    - Jak mogę zrobić drugą legitymację
+    - jak powinienem wyrobić drugą legitymację
+    - Jak mogę zrobić następną legitymację
+    - jak mogę zrobić kolejną legitymację
+    - jak powinienem wyrobić następną legitymację
+    - w jaki sposób powinienem wyrobić duplikat legitymacji
+    - W jaki sposób mogę wyrobić duplikat legitymacji
+    - jak mogę wyrobić następną legitymację
+    - W jaki sposób powinienem wyrobić następną legitymację
+    - W jaki sposób mogę zrobić następną legitymację
+    - jak powinienem wyrobić duplikat legitymacji
+    - W jaki sposób powinienem zrobić kolejną legitymację
+    - jak powinienem zrobić drugą legitymację
+    - Jak powinienem wyrobić drugą legitymację
+    - Jak mogę wyrobić drugą legitymację
+    - W jaki sposób powinienem wyrobić drugą legitymację
+    - w jaki sposób mogę zrobić następną legitymację
+    - w jaki sposób mogę wyrobić następną legitymację
+    - W jaki sposób mogę wyrobić następną legitymację
+    - w jaki sposób powinienem wyrobić kolejną legitymację
+    - w jaki sposób powinienem zrobić drugą legitymację
+    - W jaki sposób mogę zrobić drugą legitymację
+    - w jaki sposób powinienem zrobić kolejną legitymację
+    - Jak powinienem wyrobić następną legitymację
+    - jak powinienem zrobić kolejną legitymację
+    - jak mogę zrobić drugą legitymację
+    - w jaki sposób mogę zrobić duplikat legitymacji
+    - Jak mogę wyrobić kolejną legitymację
+    - Jak powinienem zrobić duplikat legitymacji
+    - Jak powinienem zrobić kolejną legitymację
+    - Jak powinienem zrobić drugą legitymację
+    - w jaki sposób powinienem wyrobić drugą legitymację
+    - w jaki sposób mogę wyrobić kolejną legitymację
+    - W jaki sposób powinienem wyrobić kolejną legitymację
+    - W jaki sposób powinienem zrobić duplikat legitymacji
+    - Jak mogę wyrobić duplikat legitymacji
+    - Jak powinienem wyrobić kolejną legitymację
+    - Jak powinienem wyrobić duplikat legitymacji
+    - Jak mogę wyrobić następną legitymację
+    - W jaki sposób mogę zrobić duplikat legitymacji
+    - w jaki sposób powinienem wyrobić następną legitymację
+    - W jaki sposób powinienem wyrobić duplikat legitymacji
+    - W jaki sposób mogę zrobić kolejną legitymację
+    - jak mogę wyrobić duplikat legitymacji
+    - w jaki sposób mogę wyrobić drugą legitymację
+    - w jaki sposób powinienem zrobić duplikat legitymacji
+    - Jak mogę zrobić duplikat legitymacji
+    - W jaki sposób powinienem zrobić drugą legitymację
+    - Jak mogę zrobić kolejną legitymację
+    - W jaki sposób mogę wyrobić drugą legitymację
+    - W jaki sposób powinienem zrobić następną legitymację
+    - jak mogę wyrobić kolejną legitymację
+    - jak mogę zrobić następną legitymację
+    - w jaki sposób mogę zrobić kolejną legitymację
+    - jak mogę wyrobić drugą legitymację
+    - w jaki sposób mogę wyrobić duplikat legitymacji
+    - W jaki sposób mogę wyrobić kolejną legitymację
+    - w jaki sposób powinienem zrobić następną legitymację
+    - jak powinienem zrobić następną legitymację
+    - jak mogę zrobić duplikat legitymacji
+    - w jaki sposób mogę zrobić drugą legitymację
+    - jak powinienem wyrobić kolejną legitymację
+    - jak powinienem zrobić duplikat legitymacji
+- intent: IleKosztujeDuplikatLegitymacji
+  examples: |
+    - Ile kosztuje duplikat legitymacji
+    - Ile kosztuje ponowne wyrobienie legitymacji
+    - Jaki jest koszt duplikatu legitymacji studenckiej
+    - Jaki jest koszt drugiej legitymacji
+    - Ile zapłacić za duplikat legitymacji
+- intent: ZmienilamNazwisko,GdzieMamToZglosic
+  examples: |
+    - Zmieniłam nazwisko , gdzie mam to zgłosić
+    - Gdzie zgłosić zmianę nazwiska
+- intent: GdzieMoznaOdebracDyplom
+  examples: |
+    - Gdzie można odebrać Dyplom
+    - W jakim miejscu można odebrać Dyplom
+    - Chciałbym odebrać dyploma, ale nie wiem gdzie
+- intent: Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+  examples: |
+    - Kiedy, gdzie i w jakiej formie składać dodatkowe informacje do wpisania do suplementu
+- intent: GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+  examples: |
+    - Gdzie akceptować lub zgłaszać uwagi do suplementu
+    - Gdzie mogę zaakceptować lub zgłosić uwagi do suplementu
+- intent: JakWygladaProceduraWznowieniaStudiow
+  examples: |
+    - Jak wygląda procedura wznowienia studiów
+    - Chcę się wznowić
+    - Co muszę zrobić, gdy chcę się wznowić
+- intent: ChceWziacUrlop,CoMamZrobic
+  examples: |
+    - Chcę wziąć urlop, co mam zrobić
+    - Co muszę zrobić gdy chcę wziąć urlop
+- intent: ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+  examples: |
+    - Zmienił się mój adres korespondencyjny
+    - Mam inny adres korespondencyjny
+    - Gdzie zgłosić gdy się przeprowadziłem
+- intent: KiedySaAkcjeRekrutacyjneNaErasmusa
+  examples: |
+    - Kiedy są akcje rekrutacyjne na Erasmusa
+    - Kiedy można się zarekrutować na Erasmusa
+- intent: JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+  examples: |
+    - Jakiej wysokości średnia pozwala wyjechać na Erasmusa
+    - Jaką muszę mieć średnią aby pojechać na Erasmusa
+- intent: JakMogeZrezygnowacZWyjazdu
+  examples: |
+    - Jak mogę zrezygnować z wyjazdu
+    - Co mam zrobić gdy jednak nie jadę na wyjazd na Erasmusa
+- intent: IlePunktowECTSNalezyZrealizowacNaErasmusie
+  examples: |
+    - Ile punktów ECTS należy zrealizować na Erasmusie
+    - Ile należy realizować punktów ECTS na Erasmusie
+- intent: JakSkontaktowacSieZDziekanatem
+  examples: |
+    - Jak skontaktować się z dziekanatem
+    - W jaki sposób mogę skontaktować się z dziekanatem
+    - Czy mogę zadzwonić do dziekanatu
+- intent: KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+  examples: |
+    - Kiedy przyjmuje studentów Pan Prodziekan ds. nauczania
+    - Kiedy przyjmuje studentów Pan Prodziekan do spraw nauczania
+    - Godziny przyjęć studentów u Pan Prodziekana ds. nauczania
+- intent: KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+  examples: |
+    - Kiedy przyjmuje studentów Pan Prodziekan ds. studenckich
+    - Kiedy przyjmuje studentów Pan Prodziekan do spraw studenckich
+    - Godziny przyjęć studentów u Pan Prodziekana ds. studenckich
+- intent: KtoraJestGodzina
+  examples: |
+    - Która jest godzina
+    - Jaki jest teraz czas
+- intent: JakieSaDzisiajGodzinyObslugiStudentow
+  examples: |
+    - Jakie są dzisiaj godziny obsługi studentów
+    - W jakich godzinach dzisiaj jest czynny dziekanat
+    - Jak jest teraz otwarty dziekanat
+    - Czy dziekanat jest otwarty w tym momencie
+- intent: PokazFilm
+  examples: |
+    - Pokaż film
+    - Wyświetl film
+- intent: GdzieJestWydzial
+  examples: |
+    - Gdzie jest wydział
+    - Przy jakiej ulicy znajduje się wydział
+    - Jak dojść na wydział
+    - Przy jakiej ulicy jest EITI
+    - Gdzie jest WEITI
+    - Jak trafić na wydział
+- intent: AktualnaPogoda
+  examples: |
+    - Jaka jest teraz pogoda
+    - Aktualna pogoda w okolicach wydziału
+    - Jakie są teraz warunki na zewnątrz
+    - Czy jest teraz ładna pogoda

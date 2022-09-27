@@ -1,0 +1,164 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ChceZrezygnowacZeStudiow,CoMamZrobic
+- JakWygladaProceduraWznowieniaStudiow
+- IleKosztujeDuplikatLegitymacji
+- WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+- NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+- powitanie
+- pozegnanie
+- bot_challenge
+- cosTakiego
+- WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+- CzyJestemUbezpieczonyWRamachNFZ
+- JakSieUbezpieczyc
+- JakWystapicOMiejsceWAkademiku
+- GdzieOdbioreDecyzjeStypendialne
+- GdzieZlozeWniosekOStypendium
+- ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+- CzyIstniejeE-obiegowka
+- JakieSaGodzinyObslugiStudentow
+- e-legitymacjaJestNieaktywna,JakiJestPowod
+- JakMogeZlozycPodanie
+- JakWyrobicDuplikatLegitymacji
+- ZmienilamNazwisko,GdzieMamToZglosic
+- GdzieMoznaOdebracDyplom
+- Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+- GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+- ChceWziacUrlop,CoMamZrobic
+- ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+- KiedySaAkcjeRekrutacyjneNaErasmusa
+- JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+- JakMogeZrezygnowacZWyjazdu
+- IlePunktowECTSNalezyZrealizowacNaErasmusie
+- JakSkontaktowacSieZDziekanatem
+- KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+- KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+- KtoraJestGodzina
+- JakieSaDzisiajGodzinyObslugiStudentow
+- PokazFilm
+- GdzieJestWydzial
+- AktualnaPogoda
+- search_subjects
+entities:
+- subject
+responses:
+  utter_powitanie:
+  - text: Cześć
+  - text: Hej
+  - text: Witam
+  - text: Dzień dobry
+  utter_pozegnanie:
+  - text: Do zobaczenia
+  - text: Do widzenia
+  utter_jestem_botem:
+  - text: Jestem człowiekiem
+  utter_cosTakiego:
+  - text: Coś takiego
+  utter_uzyj_innych_slow:
+  - text: Nie zrozumiałem, czy możesz zadać to pytanie w inny sposób
+  utter_WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta:
+  - text: "Prześlij maila do pracownika Dziekanatu, lub przyjdź do Dziekanatu w godzinach przyjęć studentów:\nPONIEDZIAŁEK: 12.00 - 15.00\nWTOREK: 12.00 - 15.00\nŚRODA:  Nieczynne\nCZWARTEK: 12.00 - 15.00\nPIĄTEK: 9.00 - 12.00\nPamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_WJakiSposobMogeOtrzymacKartePrzebieguStudiow:
+  - text: "Prześlij maila do pracownika Dziekanatu, lub przyjdź do Dziekanatu w godzinach przyjęć studentów:\nPONIEDZIAŁEK: 12.00 - 15.00\nWTOREK: 12.00 - 15.00\nŚRODA:  Nieczynne\nCZWARTEK: 12.00 - 15.00\nPIĄTEK: 9.00 - 12.00\nPamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_CzyJestemUbezpieczonyWRamachNFZ:
+  - text: "Nie. Do 26 roku życia powinieneś być ubezpieczony przez rodziców. Jeśli nie masz takiej możliwości złóż podanie do Pana Prodziekana ds. studenckich z prośbą o ubezpieczenie przez uczelnię. Jeśli masz więcej niż 26 lat, wystarczy, że zgłosisz prośbę o ubezpieczenie do pracownika Dziekanatu ds. socjalno-bytowych.\n"
+  utter_JakSieUbezpieczyc:
+  - text: "Do 26 roku życia powinieneś być ubezpieczony przez rodziców. Jeśli nie masz takiej możliwości złóż podanie do Pana Prodziekana ds. studenckich z prośbą o ubezpieczenie przez uczelnię. Jeśli masz więcej niż 26 lat, wystarczy, że zgłosisz prośbę o ubezpieczenie do pracownika Dziekanatu ds. socjalno-bytowych.\n"
+  utter_JakWystapicOMiejsceWAkademiku:
+  - text: "Szczegółowe informacje na temat zakwaterowania znajdziesz na stronie: https://sspw.pl/kwaterunek/?accommodation,detail:4484501\n"
+  utter_GdzieOdbioreDecyzjeStypendialne:
+  - text: W Dziekanacie ds. socjalno-bytowych, pokój 119.
+  utter_GdzieZlozeWniosekOStypendium:
+  - text: "Wnioski o stypendia dla osób niepełnosprawnych jak i o zapomogi można składać przez konto w USOSweb. O wszystkie inne rodzaje stypendiów należy wnioskować bezpośrednio w Dziekanacie ds. socjalno-bytowych, pokój 119.\n"
+  utter_ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa:
+  - text: "Jeśli jesteś już po obronie napisz maila do pracownika Dziekanatu aby ją aktywować. Jeśli w trakcie studiów korzystałeś z domu studenckiego napisz z którego. Pamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_CzyIstniejeE-obiegowka:
+  - text: "Jeśli jesteś już po obronie napisz maila do pracownika Dziekanatu aby ją aktywować. Jeśli w trakcie studiów korzystałeś z domu studenckiego napisz z którego. Pamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_JakieSaGodzinyObslugiStudentow:
+  - text: "PONIEDZIAŁEK: 12.00 - 15.00\nWTOREK: 12.00 - 15.00\nŚRODA:  Nieczynne\nCZWARTEK: 12.00 - 15.00\nPIĄTEK: 9.00 - 12.00\n"
+  utter_NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic:
+  - text: Tak, jeśli w danym semestrze go powtarzasz.
+  utter_e-legitymacjaJestNieaktywna,JakiJestPowod:
+  - text: "Aby e-legitymacja była aktywna, musisz mieć przedłużoną tradycyjną „plastikową” legitymację. Można to zrobić w Dziekanacie w godzinach przyjęć  studentów. Hologram z datą potwierdza, że tradycyjna legitymacja została przedłużona elektronicznie.\n"
+  utter_JakMogeZlozycPodanie:
+  - text: "Podania można składać poprzez zakładkę podania na koncie w USOSweb.\nJeśli nie ma tam zdefiniowanego typu podania którego potrzebujesz, prześlij maila do Dziekanatu lub przyjdź w godzinach przyjęć studentów:\nPONIEDZIAŁEK: 12.00 - 15.00\nWTOREK: 12.00 - 15.00\nŚRODA:  Nieczynne\nCZWARTEK: 12.00 - 15.00\nPIĄTEK: 9.00 - 12.00\nPamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_ChceZrezygnowacZeStudiow,CoMamZrobic:
+  - text: Prześlij podanie poprzez zakładkę podania na koncie w USOSweb.
+  utter_JakWyrobicDuplikatLegitymacji:
+  - text: "Wypełnij wniosek i prześlij skan wraz z potwierdzeniem opłaty (33zł) do pracownika Dziekanatu.\nOdpowiedni formularz znajdziesz na stronie Wydziału:\nhttps://www.elka.pw.edu.pl/Studenci/Zalaczniki-i-formularze/Formularze\nPamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_IleKosztujeDuplikatLegitymacji:
+  - text: "Duplikat legitymacji kosztuje 33zł. Wpłaty należy dokonać na indywidualny numer konta, który można znaleźć w zakładce rozliczenia na koncie w USOSweb.\n"
+  utter_ZmienilamNazwisko,GdzieMamToZglosic:
+  - text: Zgłoś się z dokumentem potwierdzającym zmianę danych do Działu Ewidencji Studentów PW (Gmach Główny, pokój 114).
+  utter_GdzieMoznaOdebracDyplom:
+  - text: "Dyplomy wydawane są przez Dział Ewidencji Studentów PW (Gmach Główny, pokój 114). Pamiętaj, że kiedy Twój dyplom będzie gotowy otrzymasz maila z DES. Informacja na ten temat pojawi się również na Twoim koncie w USOSweb.\n"
+  utter_Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu:
+  - text: "Po złożeniu pracy, prześlij dodatkowe zaświadczenia do pracownika Dziekanatu ds. nauczania.\nJeśli chcesz aby w suplemencie znalazła się informacja o stypendium zgłoś prośbę do pracownika Dziekanatu ds. socjalno-bytowych.\nKontakty znajdziesz na stronie Wydziału:\nhttps://www.elka.pw.edu.pl/Wydzial/Administracja-Ogolnowydzialowa/Dziekanat2\n"
+  utter_GdzieAkceptowacLubZglaszacUwagiDoSuplementu:
+  - text: Po złożeniu pracy dyplomowej, suplement do akceptacji, pojawi się na Twoim koncie w USOSweb.
+  utter_JakWygladaProceduraWznowieniaStudiow:
+  - text: "Wypełnij formularz, który znajdziesz na stronie Wydziału: https://www.elka.pw.edu.pl/Studenci/Zalaczniki-i-formularze/Formularze Jeśli byłeś studentem semestrów 1-5 studiów inżynierskich, prześlij dokument do pracownika Dziekanatu ds. nauczania. Jeśli byłeś studentem semestrów 6-9 studiów inżynierskich lub studiów magisterskich prześlij dokument do Dyrektora ds. dydaktycznych w swoim Instytucie. Pamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_ChceWziacUrlop,CoMamZrobic:
+  - text: "Podania można składać poprzez zakładkę podania na koncie w USOSweb.\nJeśli nie ma tam zdefiniowanego typu podania którego potrzebujesz, prześlij maila do Dziekanatu lub przyjdź w godzinach przyjęć studentów:\nPONIEDZIAŁEK: 12.00 - 15.00\nWTOREK: 12.00 - 15.00\nŚRODA:  Nieczynne\nCZWARTEK: 12.00 - 15.00\nPIĄTEK: 9.00 - 12.00\nPamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic:
+  - text: "Prześlij maila w tej sprawie do pracownika Dziekanatu. Pamiętaj aby wysyłać maile tylko z konta poczty studenckiej.\n"
+  utter_KiedySaAkcjeRekrutacyjneNaErasmusa:
+  - text: "Rekrutacja na Erasmusa odbywa się na przełomie marca i kwietnia. Informacje o rekrutacji dostępne w aktualnościach na stronie wydziału w zakładce wymiany międzynarodowe.\n"
+  utter_JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa:
+  - text: Średnia - 3,40
+  utter_JakMogeZrezygnowacZWyjazdu:
+  - text: O rezygnacji należy poinformować mailowo uczelnię partnerską oraz biuro ds. międzynarodowych
+  utter_IlePunktowECTSNalezyZrealizowacNaErasmusie:
+  - text: 30 ECTS (minimalnie 24 ECTS)
+  utter_JakSkontaktowacSieZDziekanatem:
+  - text: "Dane kontaktowe do wszystkich pracowników Dziekanatu znajdziesz na stronie Wydziału:\nhttps://www.elka.pw.edu.pl/Wydzial/Administracja-Ogolnowydzialowa/Dziekanat2\n"
+  utter_KiedyPrzyjmujeStudentowPanProdziekanDsNauczania:
+  - text: W poniedziałki 10:30-11:30 i w środy 13:00-14:00
+  utter_KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich:
+  - text: We wtorki 12:00-13:00 i w piątki 12:00-13:00
+actions:
+- action_aktualna_pogoda
+- action_gdzie_wydzial
+- action_pokaz_czas
+- action_pokaz_film
+- action_pokaz_godziny_otwarcia_dziekanatu_teraz
+- action_search_subjects
+- action_no_response
+- utter_ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+- utter_ChceWziacUrlop,CoMamZrobic
+- utter_ChceZrezygnowacZeStudiow,CoMamZrobic
+- utter_CzyIstniejeE-obiegowka
+- utter_CzyJestemUbezpieczonyWRamachNFZ
+- utter_GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+- utter_GdzieMoznaOdebracDyplom
+- utter_GdzieOdbioreDecyzjeStypendialne
+- utter_GdzieZlozeWniosekOStypendium
+- utter_IleKosztujeDuplikatLegitymacji
+- utter_IlePunktowECTSNalezyZrealizowacNaErasmusie
+- utter_JakMogeZlozycPodanie
+- utter_JakMogeZrezygnowacZWyjazdu
+- utter_JakSieUbezpieczyc
+- utter_JakSkontaktowacSieZDziekanatem
+- utter_JakWygladaProceduraWznowieniaStudiow
+- utter_JakWyrobicDuplikatLegitymacji
+- utter_JakWystapicOMiejsceWAkademiku
+- utter_JakieSaGodzinyObslugiStudentow
+- utter_JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+- utter_Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+- utter_KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+- utter_KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+- utter_KiedySaAkcjeRekrutacyjneNaErasmusa
+- utter_NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+- utter_WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+- utter_WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+- utter_ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+- utter_ZmienilamNazwisko,GdzieMamToZglosic
+- utter_e-legitymacjaJestNieaktywna,JakiJestPowod
+- utter_jestem_botem
+- utter_powitanie
+- utter_pozegnanie
+- utter_cosTakiego

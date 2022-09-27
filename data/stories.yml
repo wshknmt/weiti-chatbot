@@ -1,0 +1,218 @@
+version: "2.0"
+
+stories:
+- story: poczatek
+  steps:
+  - intent: powitanie
+  - action: utter_powitanie
+
+- story: koniec
+  steps:
+  - intent: pozegnanie
+  - action: utter_pozegnanie
+
+- story: cosTakiego
+  steps:
+  - intent: cosTakiego
+  - action: utter_cosTakiego
+
+- story: search_subjects
+  steps:
+  - intent: search_subjects
+  - action: action_search_subjects
+
+- story: st_WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+  steps:
+  - intent: WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+  - action: utter_WJakiSposobMogeOtrzymacZaswiadczeniePotwierdzajaceStatusStudenta
+
+- story: st_WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+  steps:
+  - intent: WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+  - action: utter_WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+
+- story: st_CzyJestemUbezpieczonyWRamachNFZ
+  steps:
+  - intent: CzyJestemUbezpieczonyWRamachNFZ
+  - action: utter_CzyJestemUbezpieczonyWRamachNFZ
+
+- story: st_JakSieUbezpieczyc
+  steps:
+  - intent: JakSieUbezpieczyc
+  - action: utter_JakSieUbezpieczyc
+
+- story: st_JakWystapicOMiejsceWAkademiku
+  steps:
+  - intent: JakWystapicOMiejsceWAkademiku
+  - action: utter_JakWystapicOMiejsceWAkademiku
+
+- story: st_GdzieOdbioreDecyzjeStypendialne
+  steps:
+  - intent: GdzieOdbioreDecyzjeStypendialne
+  - action: utter_GdzieOdbioreDecyzjeStypendialne
+
+- story: st_GdzieZlozeWniosekOStypendium
+  steps:
+  - intent: GdzieZlozeWniosekOStypendium
+  - action: utter_GdzieZlozeWniosekOStypendium
+
+- story: st_ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+  steps:
+  - intent: ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+  - action: utter_ChceOdebracDyplom,JakMogeAktywowacKarteObiegowa
+
+- story: st_CzyIstniejeE-obiegowka
+  steps:
+  - intent: CzyIstniejeE-obiegowka
+  - action: utter_CzyIstniejeE-obiegowka
+
+- story: st_JakieSaGodzinyObslugiStudentow
+  steps:
+  - intent: JakieSaGodzinyObslugiStudentow
+  - action: utter_JakieSaGodzinyObslugiStudentow
+
+- story: st_NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+  steps:
+  - intent: NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+  - action: utter_NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+
+- story: st_e-legitymacjaJestNieaktywna,JakiJestPowod
+  steps:
+  - intent: e-legitymacjaJestNieaktywna,JakiJestPowod
+  - action: utter_e-legitymacjaJestNieaktywna,JakiJestPowod
+
+- story: st_JakMogeZlozycPodanie
+  steps:
+  - intent: JakMogeZlozycPodanie
+  - action: utter_JakMogeZlozycPodanie
+
+- story: st_ChceZrezygnowacZeStudiow,CoMamZrobic
+  steps:
+  - intent: ChceZrezygnowacZeStudiow,CoMamZrobic
+  - action: utter_ChceZrezygnowacZeStudiow,CoMamZrobic
+
+- story: st_JakWyrobicDuplikatLegitymacji
+  steps:
+  - intent: JakWyrobicDuplikatLegitymacji
+  - action: utter_JakWyrobicDuplikatLegitymacji
+
+- story: st_IleKosztujeDuplikatLegitymacji
+  steps:
+  - intent: IleKosztujeDuplikatLegitymacji
+  - action: utter_IleKosztujeDuplikatLegitymacji
+
+- story: st_ZmienilamNazwisko,GdzieMamToZglosic
+  steps:
+  - intent: ZmienilamNazwisko,GdzieMamToZglosic
+  - action: utter_ZmienilamNazwisko,GdzieMamToZglosic
+
+- story: st_GdzieMoznaOdebracDyplom
+  steps:
+  - intent: GdzieMoznaOdebracDyplom
+  - action: utter_GdzieMoznaOdebracDyplom
+
+- story: st_Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+  steps:
+  - intent: Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+  - action: utter_Kiedy,GdzieIWJakiejFormieSkladacDodatkoweInformacjeDoWpisaniaDoSuplementu
+
+- story: st_GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+  steps:
+  - intent: GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+  - action: utter_GdzieAkceptowacLubZglaszacUwagiDoSuplementu
+
+- story: st_JakWygladaProceduraWznowieniaStudiow
+  steps:
+  - intent: JakWygladaProceduraWznowieniaStudiow
+  - action: utter_JakWygladaProceduraWznowieniaStudiow
+
+- story: st_ChceWziacUrlop,CoMamZrobic
+  steps:
+  - intent: ChceWziacUrlop,CoMamZrobic
+  - action: utter_ChceWziacUrlop,CoMamZrobic
+
+- story: st_ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+  steps:
+  - intent: ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+  - action: utter_ZmienilSieMojAdresKorespondencyjny,GdzieMogeToZglosic
+
+- story: st_KiedySaAkcjeRekrutacyjneNaErasmusa
+  steps:
+  - intent: KiedySaAkcjeRekrutacyjneNaErasmusa
+  - action: utter_KiedySaAkcjeRekrutacyjneNaErasmusa
+
+- story: st_JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+  steps:
+  - intent: JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+  - action: utter_JakiejWysokosciSredniaPozwalaWyjechacNaErasmusa
+
+- story: st_JakMogeZrezygnowacZWyjazdu
+  steps:
+  - intent: JakMogeZrezygnowacZWyjazdu
+  - action: utter_JakMogeZrezygnowacZWyjazdu
+
+- story: st_IlePunktowECTSNalezyZrealizowacNaErasmusie
+  steps:
+  - intent: IlePunktowECTSNalezyZrealizowacNaErasmusie
+  - action: utter_IlePunktowECTSNalezyZrealizowacNaErasmusie
+
+- story: st_JakSkontaktowacSieZDziekanatem
+  steps:
+  - intent: JakSkontaktowacSieZDziekanatem
+  - action: utter_JakSkontaktowacSieZDziekanatem
+
+- story: st_KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+  steps:
+  - intent: KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+  - action: utter_KiedyPrzyjmujeStudentowPanProdziekanDsNauczania
+
+- story: st_KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+  steps:
+  - intent: KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+  - action: utter_KiedyPrzyjmujeStudentowPanProdziekanDsStudenckich
+- story: st_KtoraJestGodzina
+  steps:
+  - intent: KtoraJestGodzina
+  - action: action_pokaz_czas
+- story: st_JakieSaDzisiajGodzinyObslugiStudentow
+  steps:
+  - intent: JakieSaDzisiajGodzinyObslugiStudentow
+  - action: action_pokaz_godziny_otwarcia_dziekanatu_teraz
+- story: st_PokazFilm
+  steps:
+  - intent: PokazFilm
+  - action: action_pokaz_film
+- story: st_GdzieJestWydzial
+  steps:
+  - intent: GdzieJestWydzial
+  - action: action_gdzie_wydzial
+- story: st_AktualnaPogoda
+  steps:
+  - intent: AktualnaPogoda
+  - action: action_aktualna_pogoda
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: ChceZrezygnowacZeStudiow,CoMamZrobic
+#   - action: utter_ChceZrezygnowacZeStudiow,CoMamZrobic
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: NieZaliczylemPrzedmiotu,CzyMuszeZaNiegoPlacic
+
+# - story: interactive_story_2
+#   steps:
+#   - intent: WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+#   - action: utter_WJakiSposobMogeOtrzymacKartePrzebieguStudiow
+
+- story: interactive_story_1
+  steps:
+  - intent: IleKosztujeDuplikatLegitymacji
+  - action: utter_IleKosztujeDuplikatLegitymacji
+
+- story: interactive_story_1
+  steps:
+  - intent: ChceZrezygnowacZeStudiow,CoMamZrobic
+  - action: utter_ChceZrezygnowacZeStudiow,CoMamZrobic
+  - intent: JakWygladaProceduraWznowieniaStudiow
+  - action: utter_JakWygladaProceduraWznowieniaStudiow

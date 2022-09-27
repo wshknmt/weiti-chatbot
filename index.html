@@ -1,0 +1,19 @@
+<head>
+  <link rel="stylesheet" href="https://home.elka.pw.edu.pl/~pmartyni/Chatroom.css" />
+</head>
+<body>
+  <div class="chat-container"></div>
+
+  <script src="https://home.elka.pw.edu.pl/~pmartyni/Chatroom.js"/></script>
+  <script type="text/javascript">
+    var chatroom = new window.Chatroom({
+      host: "http://localhost:5005",
+      title: "Wirtualny Dziekanat",
+      container: document.querySelector(".chat-container"),
+      welcomeMessage: "Zadaj pytanie, chêtnie Ci pomogê",
+       speechRecognition: "PL",
+       voiceLang: "PL"
+    });
+    chatroom.openChat();
+  </script>
+</body>
